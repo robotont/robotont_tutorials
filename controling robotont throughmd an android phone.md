@@ -5,13 +5,16 @@
 ### 2. Prepare the Robotont
 * Make sure that you have follwowed the robotont bring up tutorials and install the packages as documented in the tutorial.
 * SSH to Robotont
-* From robotont_driver package, launch robotont_basic_driver.launch.
+* From robotont_driver package, launch robotont_basic_driver.launch: <br/>
+``` roslaunch robotont_driver driver_basic.launch ```
+
 ### 3. Download the control app from the Google Play Store. 
 * From your android device, go Google Play Store and install the ROS Control app.
 ### 4. Connecting your phone to Robotont
 * Open the ROS Control app on your phone.
 * Add a new robot using the plus sign in the top right corner and give it a desired name.
-* Insert the Robotont IP into Master URI field like this: https://Robotont_IP:11311
+* Insert the Robotont IP into Master URI field like the following: <br/> 
+``` http://Robotont_IP:11311 ```
 * Click on show advanced options in the prompted window and fill in Joystick and Odometry topic names with "robotont/cmd_vel" and "robotont/odom", respectively.
 * Click on OK to add te robot.
 * Now, you can select the robot from the list and teleoperate it using the touch joystick.
