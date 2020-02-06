@@ -10,7 +10,7 @@
 ``` roslaunch robotont_driver driver_basic.launch ```
 
 ### 3. Download the control app from the Google Play Store. 
-* From your android device, go Google Play Store and install the ROS Control app.
+* From your android device, go Google Play Store and install the [ROS Control](https://play.google.com/store/apps/details?id=com.robotca.ControlApp&hl=en) app.
 ### 4. Connecting your phone to Robotont
 * Open the ROS Control app on your phone.
 * Add a new robot using the plus sign in the top right corner and give it a desired name.
