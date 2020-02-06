@@ -1,7 +1,7 @@
 # Tutorials for the Robotont platform
 
 ## Table of Contents
-1. [Control your Robotont using an Android device](#How to control your Robotont using an Android device)
+1. [Control your Robotont using an Android device](#how-to-control-your-robotont-using-an-android-device)
 
 ## How to control your Robotont using an Android device
 **Description:** This tutorial will walk you through how to control your Robotont from an Android phone or tablet.
