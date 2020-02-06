@@ -1,4 +1,9 @@
-# How to control your Robotont using an Android device
+# Tutorials for the Robotont platform
+
+## Table of Contents
+1. [Control your Robotont using an Android device](#How to control your Robotont using an Android device)
+
+## How to control your Robotont using an Android device
 **Description:** This tutorial will walk you through how to control your Robotont from an Android phone or tablet.
 
 ### 1. Download the control app from the Google Play Store. 
@@ -8,13 +13,13 @@
 ### 3. Prepare the Robotont
 * Make sure that you have followed the Robotont bring up tutorials and installed the packages as documented in the tutorial.
 * SSH to Robotont.
-* From `robotont_driver` package, launch the basic driver launch file:
+* From `robotont_driver` package, launch the basic driver launch file:<br/>
 ``` roslaunch robotont_driver driver_basic.launch ```
 
 ### 4. Connecting your phone to Robotont
 * Open the ROS Control app on your phone.
 * Add a new robot using the plus sign in the top right corner and give it a desired name.
-* Insert the Robotont IP into Master URI field by entering the following:
+* Insert the Robotont IP into Master URI field by entering the following:<br/>
 ``` http://Robotont_IP:11311 ```
 * Click on "Show advanced options" in the prompted window and fill in "Joystick" and "Odometry" topic names with "robotont/cmd_vel" and "robotont/odom", respectively.
 * Click OK to add the robot.
