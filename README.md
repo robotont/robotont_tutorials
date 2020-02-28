@@ -12,8 +12,8 @@
 * Connect your Android device to the Robotont's hotspot or the same network the Robotont is connected to.
 ### 3. Prepare the Robotont
 * In order to start working with robotont, start its ROS driver on the on-board computer.
-* Create an SSH-connection to your robotont<br/>
-``` ssh kasutaja@robotont_IP_address ```
+* Create an SSH-connection to your robotont (find the username, IP address, and password in your robotont's user guide). <br/>
+``` ssh username@robotont_IP_address ```
 * From `robotont_driver` package, launch the basic driver launch file:<br/>
 ``` roslaunch robotont_driver driver_basic.launch ```
 
