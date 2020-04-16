@@ -5,9 +5,11 @@
 
 2. [AR tracking based follow the leader demo](#follow-the-leader-demo-with-ar-tags)
 
+3. [Use python to send velocity commands to robotont](#use-python-to-send-velocity-commands-to-robotont)
+
 3. [RTabMap 3D mapping on robotont](#3d-mapping)
 
-4. [2D Navigation](#how-to-control-your-robotont-using-an-android-device)
+4. [2D SLAM (Simultaneous Localisation and Mapping)](#2d-slam)
 
 ## How to control your robotont using an Android device
 **Description:** This tutorial will walk you through how to control your robotont from an Android phone or tablet.
@@ -42,7 +44,7 @@ http://robotont_IP_address:11311
 
 ## Follow the leader demo with AR tags
 
-### Prerequisites
+### 1. Prerequisites
 * Install ar\_track\_alvar ROS package
 
 ### 2. Using the demo
@@ -50,4 +52,28 @@ http://robotont_IP_address:11311
 
 ```bash
 roslaunch robotont_tutorials ar_follow_the_leader.launch
+```
+
+
+## Use python to send velocity commands to robotont
+
+### 1. Make sure robotont driver is running.
+TODO: Ref to a separate section that covers starting/checking the service or running driver node manually.
+### 2. Run the python script
+```bash
+rosrun robotont_tutorials robotont_move.py
+```
+
+## 3D mapping
+TODO:
+
+```bash
+roslaunch robotont_tutorials 3d_mapping.launch
+```
+
+## 2D SLAM
+TODO: 
+
+```bash
+roslaunch robotont_tutorials 2d_slam.launch
 ```
