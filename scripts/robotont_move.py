@@ -2,6 +2,7 @@
 import rospy
 from geometry_msgs.msg import Twist
 import time
+import math
 
 
 def move():
@@ -18,8 +19,8 @@ def move():
     vel_msg.angular.y = 0
     vel_msg.angular.z = 0
 
-    side_length = 20            # 1/10th of a second
-    turn_length = 10            # 1/10th of a second
+    side_length = 20            # 2 seconds
+    turn_length = 20            # 2 seconds
     turn_speed = math.pi / 4    # turn 45 degrees per second
     while not rospy.is_shutdown():
 
@@ -27,7 +28,7 @@ def move():
         try:
             # Drive straight
             for i in range(0, side_length):
-                vel_msg.linear.x = 1
+                vel_msg.linear.x = 0.15     # 15 cm / sec
                 vel_msg.linear.y = 0
                 vel_msg.angular.z = 0
                 velocity_publisher.publish(vel_msg)
